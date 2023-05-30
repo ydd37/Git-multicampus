@@ -10,6 +10,5 @@ jobs:
       - run: echo "❤🧡💛💚💙💜🤎🖤🤍"
       - run: echo "${{ github.repository }}."
       - run: echo "뭐라고 쳐야할까요."
-      - run: echo "🍏 최유정입니다ㅏㅏ. 🍏"
 
 
