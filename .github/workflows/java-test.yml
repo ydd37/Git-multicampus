@@ -25,3 +25,6 @@ jobs:
       - name: Run tests
         run: mvn test
 
+      - name: Run Static Code Analysis
+        run: mvn spotbugs:check
+
