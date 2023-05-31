@@ -1,4 +1,5 @@
 name: Java Maven Test
+run-name: Java Maven Test
 
 on:
   push:
