@@ -1,0 +1,25 @@
+name: Deploy to AWS S3
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Deploy
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: AKIAZDCGW7VQKRFJ2MIS
+          aws-secret-access-key: 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
+          aws-region: ap-northeast-2
+
+      - name: Deploy
+        run: aws s3 cp index.html s3://github-actions-deploy-yujeong
+          aws s3 ~~~~~~
